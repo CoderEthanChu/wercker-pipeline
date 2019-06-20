@@ -43,3 +43,12 @@ build:
         name: go test
         code: |
           go test ./...
+
+deploy:
+  steps:
+    - internal/docker-push:
+        image-name: wercker-pipeline
+        username: $USERNAME # Registry username
+        password: $PASSWORD # Registry password
+        registry: https://hub.docker.com
+        repository: $USERNAME/wercker-pipeline
