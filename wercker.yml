@@ -47,8 +47,9 @@ build:
 deploy:
   steps:
     - internal/docker-push:
-        image-name: wercker-pipeline
         username: $USERNAME # Registry username
         password: $PASSWORD # Registry password
+        cmd: /wercker-pipline
+        tag: latest
         registry: https://hub.docker.com
         repository: $USERNAME/wercker-pipeline
