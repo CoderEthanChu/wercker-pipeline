@@ -1,9 +1,9 @@
 # wercker-pipeline
 
-### 何为wercker?
+### 何为wercker
 wercker是一家被oracle收购的一家初创公司的产品，提供容器化及微服务快速开发，部署的CI平台。
 
-### 为什么用wercker?
+### 为什么用它
 
 * 云端，简单，免费
 * 特别适合独立开发者，初创公司
